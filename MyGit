@@ -1,0 +1,69 @@
+Git 
+
+1. Создай репозиторий на GitHub
+ Comands
+ 
+ 
+user7@DDR MINGW64 /d/Подсказки/smtp
+  -- $ git init
+Initialized empty Git repository in D:/Подсказки/smtp/.git/
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SmtpMyManual
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git add .
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git commit -m "Create"
+[master (root-commit) 9b41396] Create
+ 1 file changed, 16 insertions(+)
+ create mode 100644 SmtpMyManual
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git config --global user.name maksim
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git config --global user.email maksim91fw@gmail.com
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git remote add MySMTP https://github.com/Masik91fw/SMTP.git
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git push -u MySMTP master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 661 bytes | 661.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Masik91fw/SMTP.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'MySMTP'.
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git branch -v S
+
+user7@DDR MINGW64 /d/Подсказки/smtp (master)
+  -- $ git checkout  S
+Switched to branch 'S'
+
+user7@DDR MINGW64 /d/Подсказки/smtp (S)
+  -- $ git push -u MySMTP S
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'S' on GitHub by visiting:
+remote:      https://github.com/Masik91fw/SMTP/pull/new/S
+remote:
+To https://github.com/Masik91fw/SMTP.git
+ * [new branch]      S -> S
+Branch 'S' set up to track remote branch 'S' from 'MySMTP'.
